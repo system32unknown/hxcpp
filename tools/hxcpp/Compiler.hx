@@ -437,10 +437,6 @@ class Compiler
          }
          else
          {
-            if (!Log.verbose)
-            {
-               Log.info(fileName);
-            }
             var result = ProcessManager.runProcessThreaded(exe, args, null);
             cleanTmp(tmpFile);
             if (result!=0)
