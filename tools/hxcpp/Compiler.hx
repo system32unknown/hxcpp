@@ -308,6 +308,7 @@ class Compiler
       catch(e:Dynamic) { }
    }
 
+   static public var printMutex = new Mutex();
    public function compile(inFile:File,inTid:Int,headerFunc:Void->Void,pchTimeStamp:Null<Float>,inProgess:Null<Progress>)
    {
       var obj_name = getObjName(inFile);
