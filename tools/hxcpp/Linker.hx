@@ -251,7 +251,7 @@ class Linker
          }
 
          // Place list of obj files in a file called "all_objs"
-         if (mFromFile!="")
+         if (mFromFile != "" && objs.length != 0)
          {
             PathManager.mkdir(tmpDir);
             var fname = tmpDir + "/all_objs";
